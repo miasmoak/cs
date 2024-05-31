@@ -1,0 +1,33 @@
+Il server web comunica con il browser tramite html, css javascript. 
+I server web possono comunicare con browser, dispositivi mobili e altri server tramite HTTP. 
+Lo scambio di informazione avviene usando JSON o XML. Le API eseguono la maggior parte della logica. LA comunicazione con il server Web avviene tramite le API web. 
+
+REST = Representational State Transfer, è uno stile di architettura per la creazione di servizi Wwb . 
+Le richieste REST vengono effettuate tramite HTTP. Usano gli stessi verbi HTTP usati dai Wwb browser per recuperare pagine WEb e inviare dati ai server. 
+  GET    > recupera dati dal servizio web
+  POST   > crea un elemento di dati nel servizio web 
+  PUT    > aggiorna un elemento nel servizio web
+  PATCH  > aggiorna un elemento descrivendo un set di istruzioni sulla modalità di modifica dell'elemento
+  DELETE > elimina un elemento nel servizio web
+
+API RESTful vengono definite tramite URI di base, metodi HTTP, tipo di supporto per i dati come JSON e XML 
+
+Si usa il routing per eseguire il mapping degli URI alle divisioni logiche nel codice, in modo che le richieste siano indirizzate al controller giusto. PizzaController o Ordercontroller. 
+
+VANTAGGI
+Con ASP.NET è possibile usare lo stesso framework e gli stessi modelli per creare sia pagine WEb che servizi. E' possibile riutilizzare le classi modello e la logica di convalida e persino gestire sia pagine web che servizi affiancati nello stesso progetto. Questo approccio presenta i vantaggi seguenti: 
+  - serializzazione semplica | gli endpoint serializzano automaticamente le classi in JSON formattato correttamente per impostazione predefinita. Non è richesta alcuna configurazione speciale. La serializzazione può essere personalizzata per gli endpoint con requisiti univoci. 
+  - autenticazione e autorizzazione | per la sicurezza, gli endpoint API dispongono del supporto predefinito per token JSON Web(JWT) standard del settore. L'autorizzazione basata su criteri offre la flessibilità necessaria per definire regole di controllo di accesso efficaci nel codice. 
+  - routing insieme al codice | consente di definire route e verbi inline nel codice usando gli attributi. I dati dal percoso della richiesta, dalla stringa di query e dal corpo della richiesta vengono associati automaticamente ai paramteri del metodo. 
+  - HTTPS per impostazione predefinita | HTTPs è una parte importante delle API WEb moderne e profesionali. Si basa sulla crittografia end-to-end per garantire la privacy e assicurare che le chiamate API non vengano intercettate e modificate tra client e server. 
+ASP.NET offre il supporto predefinito per HTTPS. Genera automaticamente certificato di test e lo importa facilmente per abilitare HTTPS locale, in modo che sia possibile eseguire le applicazioni ed eseguirne il debug in modo sicuro, prima di pubblicare. 
+
+CONDIVIDERE COODICE E CONOSCENZE CON LE APP.NET 
+E' possible usare le compotenze e l'ecosistema .net per condividere la logica dell'aPI Web con altre applicazioni create con .NET, tra cui dispositivi mobili, Web, desktop e servizi. 
+
+  TEST DELLE API WEB CON .NET HTTP REPL 
+  Quando si sviluppa un sito web tradizionale, in genere si visualizza e si testa il lavoro in un web browser. Le API Web accettano e restiruiscono dati anziché HTML, quindi un Web browser non è lo strumento ideale per testare le API Web. 
+
+  Una delle opzioni pià semplici d ausare per l'esplorazione e l'interazione con le API Web è .NET HTTP REPL. RePL è l'acronimo di read-evaluate-print loop. Si tratta di un modo semplice e diffuso per creare ambienti da riga di comando interattivi. 
+  Nell'unità successiva si creerà una semplica API Webe quindi si interagirà con essa usando .NET HTTP REPL. 
+    
